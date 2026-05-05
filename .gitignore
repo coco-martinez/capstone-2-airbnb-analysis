@@ -1,0 +1,6 @@
+data/raw/*.csv 
+data/processed/*.csv 
+notebooks/*.csv 
+data/raw/ 
+data/processed/ 
+notebooks/*.csv 
