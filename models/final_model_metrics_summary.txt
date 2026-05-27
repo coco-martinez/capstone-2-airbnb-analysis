@@ -1,0 +1,62 @@
+Final Model Metrics Summary
+===========================
+
+Project: Airbnb Demand + Location Recommendation
+Final model: Tuned Random Forest Regressor
+Target variable: np.log1p(reviews_per_month)
+Prediction output: converted back with np.expm1()
+
+Performance on Log Scale
+------------------------
+R2 Score: 0.463
+MAE: 0.322
+RMSE: 0.415
+
+Performance on Original Reviews per Month Scale
+-----------------------------------------------
+R2 Score: 0.328
+MAE: 0.882
+RMSE: 1.439
+
+Final Model Features
+--------------------
+- price_clean
+- pricing_competitiveness_score
+- accommodates
+- bedrooms
+- beds
+- bathrooms
+- latitude
+- longitude
+- host_is_superhost
+- host_response_time_ord
+- instant_bookable
+- family_friendly_score
+- work_friendly_score
+- amenity_strength_score
+
+Final Model Hyperparameters
+---------------------------
+bootstrap: True
+ccp_alpha: 0.0
+criterion: squared_error
+max_depth: None
+max_features: 0.5
+max_leaf_nodes: None
+max_samples: None
+min_impurity_decrease: 0.0
+min_samples_leaf: 2
+min_samples_split: 2
+min_weight_fraction_leaf: 0.0
+monotonic_cst: None
+n_estimators: 200
+n_jobs: -1
+oob_score: False
+random_state: 42
+verbose: 0
+warm_start: False
+
+Saved Files
+-----------
+Model file: ../models/rf_location_recommendation_model.pkl
+Feature list file: ../models/rf_location_recommendation_features.pkl

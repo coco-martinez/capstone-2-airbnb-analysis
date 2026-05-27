@@ -1,9 +1,22 @@
-data/raw/*.csv 
-data/processed/*.csv 
-notebooks/*.csv 
-data/raw/ 
-data/processed/ 
-notebooks/*.csv 
-models/
+# data files
+data/raw/
+data/processed/*.csv
+data/processed/*.zip
+data/processed/*.parquet
+data/processed/*.pkl
+
+# model files
+models/*.pkl
+
+# notebook checkpoints
 .ipynb_checkpoints/
-notebooks/.ipynb_checkpoints/
+
+# system files
+.DS_Store
+Thumbs.db
+
+# python
+__pycache__/
+*.pyc
+
+notebooks/*.csv
