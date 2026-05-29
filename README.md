@@ -89,6 +89,8 @@ pip install pandas numpy scikit-learn matplotlib seaborn geopy joblib plotly
 
 ## Current Limitations
 
+- reviews_per_month can't fully explain demand: a satisfied guest who stayed 3 nights, but didn't leave a review looks the same as a listing that didn't get booked. 
+- Reviews could be positive or negative, so we can only infer based on review star ratings.
 - reviews_per_month is a placeholder for demand since booking data isn't public. It does not show true bookings, occupancy, or revenue. Also, reviews_per_month isn't necessarily tied to a single booking, many guests can leave a review even if it's for the same trip.
 - The model works best in markets represented in the training data. It should not be used as a reliable predictor for areas with little or no local data.
 - Amenity themes like family-friendly, nature, and group-trip positioning aren't definitive and should be treated as directional.
